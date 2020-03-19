@@ -25,7 +25,8 @@ if (productoAEditar) {
     console.log('despues de cambiarlo', productoAEditar);
 
     //y debo escribir en el archivo ese producto actualizado
-    //
+
+    //aqui iria el codigo de modificar en el array y guardar en en json
 
 
     
