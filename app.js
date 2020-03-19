@@ -5,6 +5,8 @@ const fs = require('fs');
 
 let marca1 = new Marca('b', 'puma');
 let marca2 = new Marca('e','Trumpeter');
+let marca8 = new Marca('z','AAAPPLEEEEE');
+//Hola vengo a crear conflictos :) !
 
 let p1 = new Producto('pan', 10, 'a', marca1);
 let p2 = new Producto('fibron', 50, 'b');
