@@ -5,9 +5,10 @@ const fs = require('fs');
 
 let marca1 = new Marca('b', 'puma');
 let marca2 = new Marca('e','Trumpeter');
+let marca3 = new Marca('f', 'Sansunnggg');
 
 let p1 = new Producto('pan', 10, 'a', marca1);
-let p2 = new Producto('fibron', 50, 'b');
+let p2 = new Producto('fibron', 50, 'b', marca3);
 
 let p3 = new Producto('celular', 50000, 'c', marca1);
 let p4 = new Producto('Pollo', 300, 'd');
