@@ -1,1 +1,8 @@
-[{"nombre":"Zapatillas","codigo":"A1","precio":1000,"stock":10}]
+[
+ {
+  "nombre": "Remera",
+  "codigo": "R1",
+  "precio": 1600,
+  "stock": 5
+ }
+]
