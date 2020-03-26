@@ -9,25 +9,14 @@ let productosJson = fs.readFileSync('productos.json', 'utf8');
 let arrayProductos = JSON.parse(productosJson);
 
 //Buscar en el json al producto por codigo.
-let productoAEditar = arrayProductos.find( function (unProducto){
+let productoAEliminar = arrayProductos.find( function (unProducto){
     return unProducto.codigo == codigoABuscar;
 });
 
-//si existe el codigo le modifico el precio, nombre y stock
-if (productoAEditar) {
-    //console.log('antes de cambiarlo', productoAEditar);
-
-    productoAEditar.nombre = 'Short';
-    productoAEditar.stock = 5;
-    productoAEditar.precio = 758;
-
-    //console.log('despues de cambiarlo', productoAEditar);
-
-    //aqui iria el codigo de modificar en el array y guardar en en json
+//si existe el codigo tengo que eliminarlo
+if (productoAEliminar) {
+    //generar un array sin ese producto
     let arrayNuevo = arrayProductos.filter( unProducto => unProducto.codigo != codigoABuscar );
-
-    //meto en el array el producto editado
-    arrayNuevo.push(productoAEditar);
 
     //y debo escribir en el archivo ese producto actualizado
     fs.writeFileSync('productos.json', JSON.stringify(arrayNuevo));
