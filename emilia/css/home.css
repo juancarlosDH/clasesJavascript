@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none   ;
+}
+
+.contenedor {
+    background-image: url(../img/emilia-home.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    font-family: 'Open Sans', sans-serif;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.lo-que-sea{
+    background-color: chartreuse;
+    width: 300px;
+    border: rebeccapurple solid 3px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 100px 0;
+}
+
+h2 {
+    background-color: #ffffff7a;
+    padding: 10px;
+}
+
+header a {
+    text-transform: uppercase;
+    padding: 5px;
+    display: inline-block;
+}
+
+header a:hover {
+    background-color: silver;
+    border-left: slateblue 2px solid;
+}

@@ -1,0 +1,32 @@
+form div {
+    background-color: aquamarine;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+form{
+    background-color: beige;
+    padding: 20px;
+}
+
+
+form.con-float{
+    overflow: hidden;
+}
+
+form.con-float div {
+    width: 50%;
+    float: left;
+}
+
+
+form.con-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+
+footer{
+    background-color: blueviolet;
+}
